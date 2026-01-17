@@ -3,17 +3,20 @@ body{
     margin: 0 auto;
     font-size: 30px;
     font-family: "cinzel", "times new roman", serif;
+    border: solid 1px #000000;
+    padding: 100px 250px 100px 250px;
 }
 
 h1{
     text-align: center;
     font-size: 50px;
+    font-weight: bold;
 
     
 }
 
-h1, h4{
-    font-weight: 548;
+h4{
+    font-weight: bold;
     letter-spacing: 2.3px;
 }
 
@@ -21,9 +24,9 @@ h1, h4{
     margin-top: 60px;
 }
 
-h4{
+h2{
     text-align: center;
-    font-size: 23px;
+    font-size: 25px;
     margin-bottom: 0%;
     color: #4088e7;
 }
@@ -40,6 +43,6 @@ img{
     display: block;
     margin: 0 auto;
     margin-top: 70px;
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 150px;
 }
