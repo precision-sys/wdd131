@@ -1,20 +1,22 @@
-body {
+
+
+body{
   margin:  0 auto;
   padding: 0;
   text-align: center;
   background-color:lightgrey ;
   font-family: Arial, sans-serif;
-  max-width: 1500px;
+  max-width: 1430px;
 }
 
-main {
+main{
  
   display: grid;
   grid-template-columns: 1fr;
 }
 
 
-h1 {
+h1{
   color: white;
 }
 
@@ -52,7 +54,6 @@ nav a {
   
   
   section{
-    display: grid;
     grid-template-columns: 1fr 1fr;
   }
     button {
