@@ -6,8 +6,9 @@
     <meta name="description" content="This is my W03 WDD131 Prove Assignment">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coolpics</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/coolpic.css">
+    <script src="coolpic.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
          Menu
         </button>
 
-        <nav>
+         <nav class="seen">
           <a href="#">Home</a>
           <a href="#">Pictures</a>
           <a href="#">Places</a>
@@ -28,7 +29,7 @@
 
     <main>
        
-            <section>
+            <section class="gallery">
                  <h2>Current Work</h2>
                 <img src="images/coolpic.jpg" alt="Cloudy landscape">
                 <img src="images/coolpic.jpg" alt="Cloudy landscape">
@@ -40,12 +41,17 @@
                 <img src="images/coolpic.jpg" alt="Cloudy landscape">
                 <img src="images/coolpic.jpg" alt="Cloudy landscape">
             </section>
+
+            <dialog>
+                <img src="#" alt="#">
+                <button class="close-viewer">X</button>
+            </dialog>
         
 
     </main>
 
     <footer>
-       &copy; 2025 Not a real site
+      <p>&copy; 2025 Not a real site</p> 
     </footer>
     
 </body>
