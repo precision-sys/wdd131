@@ -30,8 +30,8 @@ img {
 }
 
 header, footer {
-  width: 100%;
-  margin: 0;
+  width: 100vw;
+  justify-self: center;
   border: 1px solid #ccc;
   background-color: rgb(0, 110, 255);
 }
