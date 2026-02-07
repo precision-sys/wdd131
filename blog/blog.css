@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#222;
+    background-color: #fff;
+    line-height: 1.6;
+    border: 2px solid black;
+}
+
+
+
+.site-header {
+position: relative;
+text-align: right;
+padding: 1rem;
+height: auto;
+border-top: 2px solid #e5a26f;
+border-bottom: 2px solid #e5a26f;
+}
+
+ h1 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    color: rgb(44, 43, 43);
+    text-align: center;
+    margin: 2rem 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+
+
+
+.main-nav a{
+    display: inline-block;
+    justify-content: right;
+    color: rgb(228, 7, 162);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+main {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+h2{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    justify-items: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    color:rgb(228, 7, 162) ;
+}
+
+img {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.message {
+    grid-column: 1/5;
+    grid-row: 4/5;
+    justify-self: start;
+    align-self: center;
+    margin-left: 50px;
+    font-size: 1.2rem;
+    color: rgb(44, 43, 43);
+    margin-bottom: 50px;
+}
+
+section{
+    grid-column: 4/5;
+    text-align: right;
+    margin-right: 50px;
+    font-size: 1.2rem;
+}
+
+.date {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px solid #e5a26f;
+    margin-top: 2rem;
+    color: rgb(44, 43, 43);
+    font-family: Georgia;
+}
+
+
+@media (min-width:660px) {
+    section{ grid-column: 1/2; }
+   
+    main{
+    grid-template-columns: 1fr 1fr fr;
+
+    }
+
+    section{
+        grid-column: 1/2;
+        grid-row:span 4 ;
+        text-align: right;
+        margin-top: 50px;
+        border-right: #e5a26f 2px solid;
+        padding-right: 50px;
+        font-size: 1.2rem;
+
+
+    }
+    
+    h2 {
+        grid-column: 2/4;
+        justify-items: center;
+        align-content: right;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        color:rgb(228, 7, 162) ;
+        margin-top: 50px;
+    }
+
+    img {
+        grid-column: 2/4;
+        justify-self:center;
+        grid-row: 3/4;
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .message {
+        grid-column: 2/4;
+        justify-self: start;
+        align-self: center;
+        margin-left: 50px;
+        font-size: 1.2rem;
+        color: rgb(44, 43, 43);
+        margin-bottom:  20px;
+    }
+}
