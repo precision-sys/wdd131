@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tiana Andriarimalala">
+    <meta name="description" content="A form for checking out">
+    <link rel="icon" href="images/creditcardflavicon.png">
+    <title>Credit Card Form</title>
+    <link rel="stylesheet" href="styles/creditcard.css">
+    <script src="creditcard.js" defer></script>
+</head>
+<body>
+    <section>
+
+
+        <section class="errors"></section>
+        <form id="creditCardForm" action="#" method="post" id="cardForm">
+    
+            <div id="front" role="region" aria-labelledby="total">    
+                <p id="total">TOTAL: $199</p>
+                
+                <label id="creditCardLabel" for="creditCardNumber">CARD NUMBER:</label>
+                <input type="text" id="creditCardNumber" name="creditCardNumber" pattern="[0-9]{16}" placeholder="1234 5678 9101 1020" required />  
+                
+                <span>
+                    <div id="cardholdername" role="region" aria-labelledby="cardholdername">
+                        <label id="holdername" for="cardholder">CARD HOLDER</label>
+                        <input type="text" id="cardholder" name="cardholder" placeholder="Tiana Andri" required />
+                    </div>
+                
+               
+                    <div id="cardExpiration" role="region" aria-labelledby="expirationDate">
+                        <label for="expirationDate">EXPIRATION</label>
+                        <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
+                        <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
+                    </div>
+                </span>
+            </div> 
+                
+                
+        
+
+            <div id="back" role="region">
+                <div id="creditCardBackContainer">
+                    <section id="darkarea"></section>
+                    <p id="creditCardBack" class="back" role="region" aria-labelledby="cvvLabel">
+                        <label id="cvvLabel" for="cvc-cvv">CVC/CVV</label>
+                        <input type="text" id="cvc-cvv" name="cvc-cvv" pattern="[0-9]{3}" placeholder="xxx" required />
+                    </p>
+                </div>
+                
+            </div>
+            
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        
+    </section>
+</body>
+</html>

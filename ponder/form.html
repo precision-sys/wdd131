@@ -30,39 +30,16 @@
         <!-- Container for credit card details -->
         <p id="creditCardNumberContainer" class="hide" role="region" aria-labelledby="creditCardLabel">
             <label id="creditCardLabel" for="creditCardNumber">Credit Card Number:</label>
-            <input
-            type="text"
-            id="creditCardNumber"
-            name="creditCardNumber"
-            pattern="[0-9]{16}"
-            placeholder="Enter 16 digits"
-            required
-            />
+            <input type="text" id="creditCardNumber" name="creditCardNumber" pattern="[0-9]{16}" placeholder="Enter 16 digits" required />
             <label for="expirationDate">Expiration</label>
-            <input 
-            type="text" 
-            id="month" 
-            name="expMonth" 
-            placeholder="MM" 
-            aria-labelledby="expirationDate">
-            <input 
-            type="text" 
-            id="year" 
-            name="expYear" 
-            placeholder="YY" 
-            aria-labelledby="expirationDate">
+            <input type="text" id="month" name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
+            <input type="text" id="year" name="expYear" placeholder="YY" aria-labelledby="expirationDate">
         </p>
       
         <!-- Container for PayPal details -->
         <p id="paypalUsernameContainer" class="hide" role="region" aria-labelledby="paypalLabel">
             <label id="paypalLabel" for="paypalUsername">PayPal Username:</label>
-            <input
-            type="text"
-            id="paypalUsername"
-            name="paypalUsername"
-            placeholder="Enter PayPal username"
-            required
-            />
+            <input type="text" id="paypalUsername" name="paypalUsername" placeholder="Enter PayPal username" required />
         </p>
 
         <button type="submit">Place Order</button>
