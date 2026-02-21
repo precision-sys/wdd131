@@ -1,7 +1,5 @@
 
-
-
-const books = [
+const articles = [
 	{
 		id: 1,
 		title: 'Septimus Heap Book One: Magyk',
@@ -43,20 +41,23 @@ const books = [
 ];
                 
 
+articles.forEach(article => {
+const booklist = document.querySelector('#book')
 
-const bookList = document.querySelector('#book-list');
-books.forEach(book => {
-    const article = document.createElement('article');
-    article.className = 'book';
-    let html = `
-        <h2>${book.title}</h2>
-        <img src=${book.imgSrc} alt="${book.imgAlt}">
-        <p><strong>Release Date:</strong>${book.date}</p>
-        <p><strong>Recommended Age:</strong>${book.ages}</p>
-        <p><strong>Genre:</strong> ${book.genre}</p>
-        <p><strong>Rating:</strong> <span area-label="${book.stars.length} out of 5 stars" role="img">${book.stars}</span></p>
-        <p id='desc'>${book.description}</p>
-    `
-    article.innerHTML = html;
-    bookList.appendChild(article);
+let htmlTemplate = `<Section id="book-list">
+            <h2>${article.title}</h2>
+            <h3 class="date">${article.date}</h3>
+            <p id="age">${article.ages}</p>
+            <p id="genre">${article.genre}</p>
+            <span role="img">${article.stars}</span>
+            <img src=${article.imgSrc} alt=${article.imgAlt}>
+            <p class="message">${article.description}</p>
+        </Section>`
+
+
+booklist.innerHTML += htmlTemplate;
+
+
 });
+
+
