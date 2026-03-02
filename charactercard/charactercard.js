@@ -9,7 +9,8 @@ const character = {
         this.level++;
     }
 }
-//Dynamically inlcudinng the image, setting the character name and the initial values of the key properties.
+//Dynamically inlcudinng the image in the page, setting the character, the name, and the 
+// initial values of the key properties.
 document.querySelector('.name').textContent = character.name;
 document.querySelector('.image').setAttribute('src', character.photo);
 document.querySelector('.image').setAttribute('alt', character.name);
