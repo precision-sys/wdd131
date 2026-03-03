@@ -10,18 +10,18 @@ const character = {
     }
 }
 //Dynamically inlcudinng the image in the page, setting the character, the name, and the 
-// initial values of the key properties.
+// initial values of the key properties. Needs more practices on this.
 document.querySelector('.name').textContent = character.name;
 document.querySelector('.image').setAttribute('src', character.photo);
 document.querySelector('.image').setAttribute('alt', character.name);
 document.getElementById('health').textContent = `Health: ${character.health}`;
 document.getElementById('level').textContent = `Level: ${character.level}`;
 
-//Activating the buttons
+//Activating the buttons.
 const attackButton = document.getElementById('attackbut');
 attackButton.addEventListener('click', function () {
-    character.health -= character.attack;
-    document.getElementById('health').textContent = `Health: ${character.health}`;
+  character.health -= character.attack;
+  document.getElementById('health').textContent = `Health: ${character.health}`;
 });
 
 const levelUpButton = document.getElementById('levelUpbut');
