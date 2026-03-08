@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
 
-    
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Recipe Book">
@@ -32,24 +33,27 @@
 </head>
 
 <body>
-    <header class="heading">
-        <div class="heading-container">
+    <header>
+        <section class="heading-container">
+            <img class="heading-image" src="images/recipe-book.png" alt="Recipe Book">
             <h1>Recipe Book</h1>
-            <img src="images/recipe-book.png" alt="Recipe Book">
-        </div>
+        </section>
+    </header>
 
-        <form class="search-form">
+    <form class="search-form">
             <div class="search-container">
-                <input type="search" placeholder="Find a recipe" aria-label="Search recipes">
+                <input class="input-field" type="search" placeholder="Find a recipe" aria-label="Search recipes">
                 <img src="images/search.svg" alt="Search icon" class="search-icon">
             </div>
         </form>
 
-    </header>
+        <hr>
+
 
     <main>
+
         <section id="container">
-            <img src="images/apple-crisp.jpg" alt="apple crisp">
+            <img class="apple-crisp" src="images/apple-crisp.jpg" alt="apple crisp">
             <h2>Apple Crisp</h2>
 
             <span
