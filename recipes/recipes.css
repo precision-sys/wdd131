@@ -1,0 +1,24 @@
+
+
+
+
+/* Social media container */
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Social media icons */
+.social-icon {
+    width: 35px;
+    height: 35px;
+}
+
+#freepik {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
