@@ -1,5 +1,12 @@
 
-
+main {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f8f8f8;
+    width: 60%;
+    border: black solid 2px;
+    border-radius: 5px;
+}
 
 
 
