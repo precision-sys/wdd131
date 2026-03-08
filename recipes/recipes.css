@@ -2,7 +2,7 @@
 
 
 
-/* Social media container */
+
 footer .social {
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@ footer .social {
     margin-bottom: 15px;
 }
 
-/* Social media icons */
+
 .social-icon {
     width: 35px;
     height: 35px;
