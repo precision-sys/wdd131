@@ -40,7 +40,9 @@
         </section>
     </header>
 
-    <form class="search-form">
+    <main>
+
+        <form class="search-form">
             <div class="search-container">
                 <input class="input-field" type="search" placeholder="Find a recipe" aria-label="Search recipes">
                 <img src="images/search.svg" alt="Search icon" class="search-icon">
@@ -50,42 +52,41 @@
         <hr>
 
 
-    <main>
-
         <section id="container">
+           
             <img class="apple-crisp" src="images/apple-crisp.jpg" alt="apple crisp">
-            <h2>Apple Crisp</h2>
+            
+            <div class="recipe-content">
+                <span class="recipe-type">dessert</span>
+                <h2>Apple Crisp</h2>
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                  <span aria-hidden="true" class="icon-star">⭐</span>
+                  <span aria-hidden="true" class="icon-star">⭐</span>
+                  <span aria-hidden="true" class="icon-star">⭐</span>
+                  <span aria-hidden="true" class="icon-star">⭐</span>
+                  <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
 
-            <span
-              class="rating"
-              role="img"
-              aria-label="Rating: 4 out of 5 stars"
-            >
-              <span aria-hidden="true" class="icon-star">⭐</span>
-              <span aria-hidden="true" class="icon-star">⭐</span>
-              <span aria-hidden="true" class="icon-star">⭐</span>
-              <span aria-hidden="true" class="icon-star">⭐</span>
-              <span aria-hidden="true" class="icon-star-empty">☆</span>
-            </span>
-
-            <p>This apple crisp is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+                <p>This apple crisp is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+            </div>
         </section>        
 
     </main>
 
-    <footer>
+    <footer class="footer-container">
     
-    <div class="social">
-      <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-      <a  href="#"><img class="social-icon" src="images/instagram_icon.svg" alt="instagram icon"></a>
-      <a  href="#"><img class="social-icon" src="images/youtube_icon.svg" alt="youtube icon"></a>
-      <a  href="#"><img class="social-icon" src="images/pinterest_icon.svg" alt="pinterest icon"></a> 
-    </div>             
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a  href="#"><img class="social-icon" src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a  href="#"><img class="social-icon" src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a  href="#"><img class="social-icon" src="images/pinterest_icon.svg" alt="pinterest icon"></a> 
+        </div>             
     
-      <a id="freepik" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a> 
+        <div>
+            <a  class="freepik" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a> 
+        </div>
                 
                 
-
     </footer>
     
 </body>
