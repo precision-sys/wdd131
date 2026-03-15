@@ -161,4 +161,8 @@ p {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
+
+    body {
+        max-width: 1700px;
+    }
 }
