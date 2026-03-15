@@ -282,11 +282,12 @@ const recipes = [
 ]            
 
 let button = document.querySelector('button');
-let recipeContainer = document.querySelector('#container');
+let recipeContainer = document.querySelector('#recipe-container');
 
 button.addEventListener('click', search);
 
-function search() {
+function search(event) {
+    event.preventDefault();
     let searchTerm = document.querySelector('#search').value;
     let filterRecipes = recipes.filter(function(recipe) {
         return (recipe.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
@@ -340,14 +341,18 @@ function ratingTemplate(rating) {
 
 function recipeTemplate(recipe) {
     return `
-    <img class="apple-crisp" src="${recipe.image}" alt="${recipe.name}">
+    <section class="container">
+	<img class="recipe-image" src="${recipe.image}" alt="${recipe.name}">
             
             <div class="recipe-content">
-                <span class="recipe-type">${recipe.tags[0]}</span>
+                <span class="recipe-type">${tagTemplate(recipe.tags)}</span>
                 <h2>${recipe.name}</h2>
-                <span class="rating" role="img" aria-label="Rating: ${recipe.rating} out of 5 stars"></span>
+                <span class="rating" role="img" aria-label="Rating: ${recipe.rating} out of 5 stars">
+					${ratingTemplate(recipe.rating)}
+				</span>
                 <p>${recipe.description}</p>
             </div>
+	</section>
     `;
 }
 
@@ -361,23 +366,5 @@ function init() {
 }
 
 init()
-
-
-/* <img class="apple-crisp" src="images/apple-crisp.jpg" alt="apple crisp">
-            
-            <div class="recipe-content">
-                <span class="recipe-type">dessert</span>
-                <h2>Apple Crisp</h2>
-                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                  <span aria-hidden="true" class="icon-star">⭐</span>
-                  <span aria-hidden="true" class="icon-star">⭐</span>
-                  <span aria-hidden="true" class="icon-star">⭐</span>
-                  <span aria-hidden="true" class="icon-star">⭐</span>
-                  <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-
-                <p>This apple crisp is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-            </div>
-*/
 
 
