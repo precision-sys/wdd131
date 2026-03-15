@@ -324,7 +324,7 @@ let randomNum = Math.floor(Math.random() * recipes.length);
 console.log(randomNum);
 
 function tagTemplate(tags) {
-    return tags.map((tag)=> `<span class="recipe-type">${tag}</span>`).join(' ');
+    return tags.map((tag)=> `<div class="recipe-type">${tag}</div>`).join(' ');
 }
 
 function ratingTemplate(rating) {
@@ -345,7 +345,7 @@ function recipeTemplate(recipe) {
 	<img class="recipe-image" src="${recipe.image}" alt="${recipe.name}">
             
             <div class="recipe-content">
-                <span class="recipe-type">${tagTemplate(recipe.tags)}</span>
+                ${tagTemplate(recipe.tags)}
                 <h2>${recipe.name}</h2>
                 <span class="rating" role="img" aria-label="Rating: ${recipe.rating} out of 5 stars">
 					${ratingTemplate(recipe.rating)}
