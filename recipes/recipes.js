@@ -284,6 +284,40 @@ const recipes = [
 let button = document.querySelector('button');
 let recipeContainer = document.querySelector('#container');
 
+button.addEventListener('click', search);
+
+function search() {
+    let searchTerm = document.querySelector('#search').value;
+    let filterRecipes = recipes.filter(function(recipe) {
+        return (recipe.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+        recipe.description.toLowerCase().includes(searchTerm.toLowerCase())) ||
+        recipe.tags.find(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
+    
+    })
+
+    console.log(filterRecipes);
+
+    let sortedRecipes = filterRecipes.sort(compareRecipes);
+
+    function compareRecipes(a,b) {
+    if (a.rating < b.rating) {
+        return -1;
+    } else if (a.rating > b.rating) {
+        return 1;
+    }
+    return 0;
+    }
+
+    recipeContainer.innerHTML = '';
+    sortedRecipes.forEach(function(recipe){
+       renderRecipe(recipe);
+
+
+} 
+)}
+
+
+
 
 let randomNum = Math.floor(Math.random() * recipes.length);
 console.log(randomNum);
@@ -319,7 +353,7 @@ function recipeTemplate(recipe) {
 
 function renderRecipe(recipe) {
     let html = recipeTemplate(recipe);
-    recipeContainer.innerHTML = html;
+    recipeContainer.innerHTML += html;
 }
 
 function init() {
