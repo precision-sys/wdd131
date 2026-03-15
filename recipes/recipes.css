@@ -84,6 +84,12 @@ hr {
     padding-left: 8px;
 }
 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .recipe-type {
     font-size: 1.5em;
     color:black;
