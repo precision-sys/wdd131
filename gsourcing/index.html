@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giant Sourcing | Corporate Support Services</title>
+  <meta name="description" content="Giant Sourcing offers company registration, bookkeeping, tax compliance, and HR services to help businesses grow.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #1E3A5F;
+      --secondary-color: #F5F7FA;
+      --accent1: #2CA58D;
+      --accent2: #F4A261;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: var(--secondary-color);
+    }
+
+    header {
+      background: var(--primary-color);
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+    }
+
+    span {
+      font-size: 1.5em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent2);
+    }
+
+    .hero {
+      padding: 60px 20px;
+      background: white;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    #first-paragraph, #second_paragraph {
+      text-align: center;
+      width: 500px;
+      margin: 20px auto;
+      font-size: 1.2em;
+      color: var(--primary-color);
+    }
+
+    #heading2 {
+      text-align: center;
+    }
+
+    .cta-btn {
+      background: var(--accent1);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .cta-btn:hover {
+      background: var(--accent2);
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .highlight {
+    
+      color: var(--accent2);
+    }
+
+    @media (min-width: 800px) {
+      .hero img {
+        width: 65%;
+      }
+
+      #first-paragraph, #second_paragraph {
+      width: 900px;
+      margin: 20px auto;
+      font-size: 1.2em;
+      color: var(--primary-color);
+    }
+
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Giant Sourcing Logo">
+      <span>Giant Sourcing</span>
+    </div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <img src="images/banner.jpg" alt="Business team working together">
+  <h1>Corporate Support Services for Growing Businesses</h1>
+  <h2>We Simplify Business</h2>
+  <section id="first-paragraph">
+  <p>
+    Giant Sourcing empowers entrepreneurs and small businesses to streamline and grow their operations by offering comprehensive support across company registration, 
+    bookkeeping, tax compliance, and HR management, while also providing event planning, administrative assistance, visa and travel support, 
+    and reliable virtual assistance to ensure every aspect of business management runs efficiently and effectively
+  </p>
+  </section>
+  <button class="cta-btn">Contact Us</button>
+</section>
+
+<section class="section" id="services">
+  
+  <div class="services">
+
+    <div class="card">
+      <img src="images/registration_card.jpg" alt="Company registration">
+      <h3>Company Registration</h3>
+      <p>We help you start your business easily.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/bookkeeping.jpg" alt="Bookkeeping">
+      <h3>Bookkeeping</h3>
+      <p>Keep your finances organized and accurate.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/tax_card.jpg" alt="Tax services">
+      <h3>Tax Compliance</h3>
+      <p>Stay compliant with tax laws.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/hr_card.jpg" alt="HR services">
+      <h3>HR Management</h3>
+      <p>Manage your team effectively.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/administration.jpg" alt="Admin support">
+      <h3>Admin Support</h3>
+      <p>Focus on growth while we handle tasks.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/virtual_assistant.jpg" alt="Virtual assistant services">
+      <h3>Virtual Assistance</h3>
+      <p>Outsource administrative tasks with our virtual assistant.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/visa_travel.jpg" alt="Visa and travel services">
+      <h3>Visa and travel support</h3>
+      <p>Assist with visa applications and travel arrangements.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/event_planning.jpg" alt="Event planning services">
+      <h3>Event Planning</h3>
+      <p>Plan and execute successful events for your business.</p>
+    </div>
+
+
+  </div>
+</section>
+
+<section class="section">
+  <h2 id="heading2">Why Choose Giant Sourcing</h2>
+    <p id="second_paragraph">
+        Giant Sourcing is the trusted partner for entrepreneurs and small businesses who want to simplify operations and accelerate growth. 
+        By combining industry expertise with a commitment to excellence, we deliver reliable business solutions that ensure efficiency, compliance, and long‑term success. 
+        we help businesses thrive in competitive markets and achieve sustainable results.
+    </p>
+</section>
+
+
+</main>
+
+<footer>
+  <p>© 2026 Giant Sourcing</p>
+</footer>
+
+</body>
+</html>
