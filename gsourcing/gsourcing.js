@@ -15,7 +15,86 @@ window.addEventListener("resize", function() {
     }});
 
 
+/* Services array */
 
+const services = [
+{
+    title: "Company Registration",
+    description: "We help you start your business easily.",
+    image: "images/registration_card.jpg",
+    link: "registration.html"
+},
+
+{
+    title: "Bookkeeping",
+    description: "Keep your finances organized and accurate.",
+    image: "images/bookkeeping.jpg",
+    link: "Bookkeeping.html"
+},
+
+{
+    title: "Tax Compliance",
+    description: "Stay compliant with tax laws.",
+    image: "images/tax_card.jpg",
+    link: "Tax.html"
+},
+
+{
+    title: "HR Management",
+    description: "Manage your team effectively.",
+    image: "images/hr_card.jpg",
+    link: "HR.html"
+},
+
+
+{    title: "Admin Support",
+    description: "Focus on growth while we handle tasks.",
+    image: "images/administration.jpg",
+    link: "Administration.html"
+},
+
+{
+    title: "Virtual Assistance",
+    description: "Outsource administrative tasks with our virtual assistant.",
+    image: "images/virtual_assistant.jpg",
+    link: "VirtualAssistant.html"
+},
+
+{
+    title: "Visa and Travel Support",
+    description: "Assist with visa applications and travel arrangements.",
+    image: "images/visa_travel.jpg",
+    link: "VisaTravel.html"
+},
+
+{
+    title: "Event Planning",
+    description: "Plan and execute successful events for your business.",
+    image: "images/event_planning.jpg",
+    link: "EventPlanning.html"
+}
+
+]
+
+const servicesContainer = document.getElementById("servicesContainer");
+
+services.forEach(service => {
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    card.innerHTML = `
+        <img src="${service.image}" alt="${service.title}">
+        <h3>${service.title}</h3>
+        <p>${service.description}</p>
+        <a href="${service.link}" class="btn">Learn More</a>
+    `;
+
+    servicesContainer.appendChild(card);
+});
+
+
+
+/* Slideshow functionality */
 
 const slides = [
  {
@@ -46,6 +125,12 @@ const slides = [
     image: "images/slide5.jpg",
     alt_text: "A laptop with accounting documents"
 
+ },
+
+ {
+    image: "images/slide6.jpg",
+    alt_text: "virtual assistant sitting at a desk with a computer and headset"
+
  }
 
 
@@ -53,6 +138,8 @@ const slides = [
 
 const slideshow = document.getElementsByClassName("slideshow-container")[0];
 const dotsContainer = document.getElementsByClassName("dots")[0];  
+
+
 
 let slidesHTML = "";
 let dotsHTML = "";
@@ -67,7 +154,10 @@ slides.forEach((slide, index) => {
         <span class="dot" onclick="currentSlide(${index + 1})"></span>
     `;
 });
-slideshow.innerHTML += slidesHTML;
+slideshow.innerHTML = `
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+` + slidesHTML;;
 dotsContainer.innerHTML = dotsHTML;
 
 
@@ -113,6 +203,10 @@ setInterval(() => {
     slideIndex++;
     showSlides(slideIndex);
 }, 3000);
+
+
+
+
 
 
 
