@@ -218,20 +218,26 @@ h1, h2, h3 {
     }
 
 footer {
-    display: flex;
-    justify-content: space-between;
     background: #1E3A5F;
     color: white;
     text-align: center;
     padding: 20px;
     }
 
-    
+    .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
 
 .social img {
     width: 30px;
 }
-
+.colors {
+  border-collapse: collapse;
+  margin: 30px auto;
+  text-align: center;
+}
 
 .highlight {
     
