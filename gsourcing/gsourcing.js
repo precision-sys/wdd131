@@ -200,10 +200,20 @@ function showSlides(n) {
 
 showSlides(slideIndex); 
 
-setInterval(() => {
-    slideIndex++;
-    showSlides(slideIndex);
-}, 3000);
+let interval = setInterval(nextSlide, 3000);
+
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    clearInterval(interval);
+  } else {
+    interval = setInterval(nextSlide, 3000);
+  }
+});
+
+function nextSlide() {
+  slideIndex++;
+  showSlides(slideIndex);
+}
 
 
 
