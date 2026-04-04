@@ -121,11 +121,6 @@ const slides = [
 
  },
 
- {
-    image: "images/slide4.jpg",
-    alt_text: "Hand holding a pen and signing a contract"
-
- },
 
  {
     image: "images/slide5.jpg",
