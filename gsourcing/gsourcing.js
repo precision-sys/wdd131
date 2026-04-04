@@ -104,32 +104,32 @@ services.forEach(service => {
 
 const slides = [
  {
-    image: "images/slide1.jpg",
+    image: "images/slide1.webp",
     alt_text: "Business team working together"
 
  },
 
  {
-    image: "images/slide2.jpg",
+    image: "images/slide2.webp",
     alt_text: "Files with paper work"
 
  },
 
  {
-    image: "images/slide3.jpg",
+    image: "images/slide3.webp",
     alt_text: "Tax forms and a calculator on a desk"
 
  },
 
 
  {
-    image: "images/slide6.jpg",
+    image: "images/slide4.webp",
     alt_text: "virtual assistant sitting at a desk with a computer and headset"
 
  },
 
  {
-    image: "images/slide7.jpg",
+    image: "images/slide5.webp",
     alt_text: "Picture of a real estate property with a For Sale sign in front"
 
  }
