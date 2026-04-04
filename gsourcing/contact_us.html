@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Giant Sourcing | Corporate Support Services</title>
   <meta name="author" content="Tiana Andriarimalala">
-  <meta name="description" content="Giant Sourcing offers company registration, bookkeeping, tax compliance, and HR services to help businesses grow.">
+  <meta name="description" content="Contact Giant Sourcing for all your corporate support needs.">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/gsourcing.css">
   <script src="gsourcing.js" defer></script>
@@ -14,9 +14,9 @@
 <body>
 
 <header>
-  <nav>
+  <nav aria-label="Main navigation">
     <div class="logo">
-      <img src="images/logo.png" alt="Giant Sourcing Logo">
+      <img src="images/logo.png" alt="Giant Sourcing Company Logo">
       <span>Giant Sourcing</span>
     </div>
     
@@ -24,17 +24,16 @@
       <a href="index.html">Home</a>
       <a href="about_us.html">About</a>
       <a href="services.html">Services</a>
-      <a href="contact_us.html">Contact</a>
+      <a href="contact_us.html" aria-current="page">Contact</a>
     </div>
 
-    <button class="menu-btn">
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
           <span class="bar1"></span>
           <span class="bar2"></span>
           <span class="bar3"></span>
     </button>
   </nav>
 
-  
 </header>
 
 <main>
@@ -49,19 +48,19 @@
       <label for="fullName">Full Name:</label>
       <input type="text" id="fullName" name="fullName" required>
 
-      <label for="email">Email:</label>
+      <label for="email" >Email <span aria-hidden="true">*</span></label>
       <input type="email" id="email" name="email" placeholder="email@email.com" required>
 
       <label for="subject">Subject:</label>
-      <select id="subject" name="subject" required>
+      <select id="subject" name="subject" required aria-required="true">
         <option value="">Select a subject</option>
         <option value="general">General Inquiry</option>
         <option value="service">Service Request</option>
         <option value="support">Support</option>
       </select>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="message">Message <span aria-hidden="true">*</span></label>
+      <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
 
       <label for="phone">Phone (optional):</label>
       <input type="tel" id="phone" name="phone" placeholder="+261 xxx xxx xxx">
