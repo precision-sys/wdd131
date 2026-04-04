@@ -123,12 +123,6 @@ const slides = [
 
 
  {
-    image: "images/slide5.jpg",
-    alt_text: "A laptop with accounting documents"
-
- },
-
- {
     image: "images/slide6.jpg",
     alt_text: "virtual assistant sitting at a desk with a computer and headset"
 
