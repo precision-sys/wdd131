@@ -224,6 +224,17 @@ footer {
     padding: 20px;
     }
 
+    .social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.social img {
+    width: 30px;
+}
+
+
 .highlight {
     
     color: #F4A261;
