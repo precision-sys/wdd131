@@ -154,7 +154,7 @@ let dotsHTML = "";
 slides.forEach((slide, index) => {
     slidesHTML += `
         <div class="mySlides fade">
-            <img src="${slide.image}" alt="${slide.alt_text}">
+            <img src="${slide.image}" alt="${slide.alt_text}" loading="lazy">
         </div>
     `;
     dotsHTML += `
