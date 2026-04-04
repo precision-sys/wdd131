@@ -12,10 +12,19 @@ header {
     }
 
 
-.menu-btn {
+.menu-btn span {
+    display: block;
     cursor: pointer;
     border: none;
-    background-color: transparent;
+    
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu-btn {
+  background-color: #1E3A5F;
 }
 
 nav {
@@ -172,6 +181,11 @@ h1, h2, h3 {
     border-radius: 5px;
     }
 
+    #contactusmiddle {
+        text-decoration: none;
+        color: white;
+    }
+
 .cta-btn:hover {
     background: #F4A261;
     }
@@ -257,6 +271,10 @@ button {
   cursor: pointer;
 }
 
+#contactussendbtn {
+ margin-bottom: 100px;
+}
+
 .contacth1 {
   text-align: center;
   margin-bottom: 20px;
@@ -280,12 +298,75 @@ button {
 
 
 
+
+/*The about us page*/
+
+main {
+padding: 15px;
+}
+
+section {
+margin-bottom: 30px;
+}
+
+h2 {
+color: #1E3A5F;
+font-size: 1.4rem;
+margin-bottom: 10px;
+}
+
+p {
+line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.highlight {
+background-color: #2CA58D;
+color: white;
+padding: 15px;
+border-radius: 8px;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+margin-bottom: 8px;
+font-size: 0.95rem;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta a {
+display: inline-block;
+width: 100%;
+max-width: 300px;
+background-color: #2CA58D;
+color: white;
+padding: 14px;
+text-decoration: none;
+border-radius: 6px;
+font-size: 1rem;
+}
+
+.cta a:hover {
+  background-color: #1E3A5F;
+}
+
+
+
+
+
+
+
  
 
 
 @media (min-width: 800px) {
-
-    
+/*desktop and larger screens*/ 
     .nav-links {
         display: flex;
         gap: 20px;
@@ -335,5 +416,34 @@ nav a:hover {
     }
 
     }
+
+    /*About Us media queries*/
+    @media (min-width: 600px) {
+  #aboutus {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+    
+
+
+
+
+  
 
 

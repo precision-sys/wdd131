@@ -14,6 +14,12 @@ window.addEventListener("resize", function() {
         navLinks.classList.remove('active')
     }});
 
+/*The middle "Contact Us" button functionality */
+const contactUsBtn = document.querySelector('.cta-btn');
+contactUsBtn.addEventListener('click', function() {
+    window.location.href = 'contact_us.html';
+});
+
 
 /* Services array */
 
@@ -47,10 +53,10 @@ const services = [
 },
 
 
-{    title: "Admin Support",
-    description: "Focus on growth while we handle tasks.",
-    image: "images/administration.jpg",
-    link: "Administration.html"
+{    title: "Real Estate Services",
+    description: "Comprehensive real estate services.",
+    image: "images/real_estate.jpg",
+    link: "RealEstate.html"
 },
 
 {
@@ -130,6 +136,12 @@ const slides = [
  {
     image: "images/slide6.jpg",
     alt_text: "virtual assistant sitting at a desk with a computer and headset"
+
+ },
+
+ {
+    image: "images/slide7.jpg",
+    alt_text: "Picture of a real estate property with a For Sale sign in front"
 
  }
 
