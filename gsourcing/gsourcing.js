@@ -14,11 +14,6 @@ window.addEventListener("resize", function() {
         navLinks.classList.remove('active')
     }});
 
-/*The middle "Contact Us" button functionality */
-const contactUsBtn = document.querySelector('.cta-btn');
-contactUsBtn.addEventListener('click', function() {
-    window.location.href = 'contact_us.html';
-});
 
 
 /* Services array */

@@ -179,6 +179,7 @@ h1, h2, h3 {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
     }
 
     #contactusmiddle {
